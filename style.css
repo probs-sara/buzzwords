@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('coolvetica/coolvetica\ compressed\ hv.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('lemon_milk/LEMONMILK-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Lemon Milk';
+    margin: 10vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+input {
+    font-family: 'Lemon Milk';
+}
+
+input[type=text] {
+    /* border: none; */
+    outline: none;
+    display: block;
+    margin: auto;
+    font-size: 30px;
+    width: 50vh;
+}
+
+td {
+    border-bottom: 1px solid lightgray;
+    border-collapse: collapse;
+}
+
+.game {
+    display: flex;
+    flex: 1 1 0px;
+    flex-direction: row;
+}
+
+.game-box {
+    border: 1px solid black;
+    margin: 1vh;
+    flex-grow: 1;
+    flex: 1 1 0px;
+}
+
+form .button-grid {
+    border: 0px;
+    outline: none;
+    display: block;
+    margin: auto;
+}
