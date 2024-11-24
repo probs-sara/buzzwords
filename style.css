@@ -56,19 +56,19 @@ td {
 .hex-grid {
     display: flex;
     flex-direction: column;
-    gap: 3px; /* Space between rows */
+    gap: 3px; 
     margin-top: 5vh;
   }
   
 .row {
     display: flex;
     justify-content: center;
-    gap: 5px; /* Space between hexagons in a row */
+    gap: 5px;
     position: relative;
   }
   
 .offset {
-    margin-left: 0px; /* Offset alternate rows for proper honeycomb layout */
+    margin-left: 0px; 
   }
   
 .hex {
@@ -76,7 +76,6 @@ td {
     width: 120px; 
     height: 104px;
     margin-top: -52px;
-    /* margin-left: -60px; */
   }
 
 .block {
@@ -106,7 +105,7 @@ td {
       25% 100%, /* Bottom-left */
       0% 50%    /* Left-middle */
     );
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Improved shadow for a clean look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     transition: transform 0.2s, background-color 0.2s;
   }
   
@@ -120,7 +119,7 @@ td {
   }
 
 a {
-    color: black;
+    color: #EACBD2;
     text-decoration: none;
 }
 
