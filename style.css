@@ -8,11 +8,17 @@
 body {
     font-family: 'Lemon Milk';
     margin: 10vh;
+    
 }
 
 h1 {
     text-align: center;
-    font-size: 24px;
+    font-size: 5vh;
+    margin-bottom: -1vh;
+}
+
+.desc {
+    text-align: center;
 }
 
 input {
@@ -20,12 +26,13 @@ input {
 }
 
 input[type=text] {
-    /* border: none; */
+    border: none;
     outline: none;
     display: block;
     margin: auto;
-    font-size: 30px;
+    font-size: 3vh;
     width: 50vh;
+    text-align: center;
 }
 
 td {
@@ -40,15 +47,101 @@ td {
 }
 
 .game-box {
-    border: 1px solid black;
+    border: 0px solid black;
     margin: 1vh;
     flex-grow: 1;
     flex: 1 1 0px;
 }
+  
+.hex-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3px; /* Space between rows */
+    margin-top: 5vh;
+  }
+  
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Space between hexagons in a row */
+    position: relative;
+  }
+  
+.offset {
+    margin-left: 0px; /* Offset alternate rows for proper honeycomb layout */
+  }
+  
+.hex {
+    position: relative;
+    width: 120px; 
+    height: 104px;
+    margin-top: -52px;
+    /* margin-left: -60px; */
+  }
 
-input[type=button] {
-    border: 0px;
-    outline: none;
-    display: block;
+.block {
+    width: 60px;
+}
+  
+.hex-button {
+    font-family: 'Lemon Milk';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    border: none;
+    font-size: 3vh;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    line-height: 104px;
+    cursor: pointer;
+    clip-path: polygon(
+      25% 0%,   /* Top-left */
+      75% 0%,   /* Top-right */
+      100% 50%, /* Right-middle */
+      75% 100%, /* Bottom-right */
+      25% 100%, /* Bottom-left */
+      0% 50%    /* Left-middle */
+    );
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Improved shadow for a clean look */
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+.hex-button:hover {
+    transform: scale(1.05);
+  }
+  
+.center {
+    background-color: #EACBD2;
+    font-weight: bold
+  }
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.inputbutton {
+    background-color: white;
+    border: 1px solid lightgray;
+    font-family: 'Lemon Milk'; 
+    padding: 1vh;
+    border-radius: 5vh;
+}
+
+.inputmenu {
     margin: auto;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1vh;
+}
+
+.inputbutton:hover {
+    background-color: #e0e0e0; 
+    transform: scale(1.05);
+    cursor: pointer;
 }

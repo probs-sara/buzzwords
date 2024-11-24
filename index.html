@@ -7,29 +7,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>Buzzwords</h1>
+    <p class="desc">A word game inspired by the New York Times game, <a href="https://www.nytimes.com/puzzles/spelling-bee/">Spelling Bee</a>. </p>
     <div class="game">
         
         <div class="game-box">
-            <h1>Buzzwords</h1>
+            
             <form>
                 <input type="text" placeholder="Type your word..."><br/><br/>
-                <div class="button-grid">
-                    <input type="button" value="letter1" id="letter1">
-                    <input type="button" value="letter2" id="letter2">
-                    <input type="button" value="letter3" id="letter3">
-                    <input type="button" value="letter4" id="letter4">
-                    <input type="button" value="letter5" id="letter5">
-                    <input type="button" value="letter6" id="letter6">
-                    <input type="button" value="letter7" id="letter7"><br/><br/>
-                </div>
-                <input type="button" value="delete" id="delete">
-                <input type="button" value="shuffle" id="shuffle">
-                <input type="button" value="enter" id="enter">
             </form>
+            <div class="hex-grid">
+                <div class="row">
+                  <div class="hex"></div>
+                  <div class="hex">
+                    <button class="hex-button">B</button>
+                  </div>
+                  <div class="hex"></div>
+                </div>
+                <div class="row offset">
+                  <div class="hex">
+                    <button class="hex-button">A</button>
+                  </div>
+                   <div class="block"></div>
+                  <div class="hex">
+                    <button class="hex-button">C</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="hex">
+                    <button class="hex-button center">D</button>
+                  </div>
+                </div>
+                <div class="row offset">
+                  <div class="hex">
+                    <button class="hex-button">E</button>
+                  </div>
+                  <div class="block"></div>
+                  <div class="hex">
+                    <button class="hex-button">F</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="hex">
+                    <button class="hex-button">G</button>
+                  </div>
+                </div>
+              </div><br/><br/>
+            <div class="inputmenu">
+                <button class="inputbutton">Delete</button>
+                <button class="inputbutton">Shuffle</button>
+                <button class="inputbutton">Enter</button>
+            </div>
         </div>     
         <div class="game-box">
-            <h1> &nbsp;</h1>
+            <!-- <h1> &nbsp;</h1> -->
             <p>You've found 0 words.</p>
             <table>
                 <tr>
